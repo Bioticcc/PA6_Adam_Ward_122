@@ -42,7 +42,7 @@ public:
 	void setDataM(string str) { DataM = str; }
 	void setDataT(char chr) { DataT = chr; }
 
-
+	
 
 };
 

@@ -24,6 +24,9 @@
     <ClCompile Include="BstNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BstTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">
@@ -32,5 +35,13 @@
     <ClInclude Include="BstNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BstTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="morseLibrary.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
