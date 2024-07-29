@@ -1,5 +1,8 @@
-#include "Header.h"
 
+#ifndef BSTNODE_H
+#define BSTNODE_H
+
+#include "Header.h"
 
 #pragma once
 class BstNode
@@ -10,15 +13,13 @@ private:
 	string DataM;
 	char DataT;
 public:
+	
 	//setting nullptrs by default
 	BstNode() : Rchi(nullptr), Lchi(nullptr), DataM("none"), DataT('n'){}
 	
-	BstNode(BstNode* Rchi, BstNode* Lchi, string DataM, char DataT) {
-		Rchi = nullptr;
-		Lchi = nullptr;
-		DataM = "none";
-		DataT = 'n';
-	}
+	BstNode(BstNode* rightP, BstNode* leftP, string dataM, char dataT)
+		: Rchi(rightP), Lchi(leftP), DataM(dataM), DataT(dataT) {}
+
 	//aint these two things above do thesame thing? prolly, maybe idk. will change when less lazy
 
 	//copy constructor
@@ -30,19 +31,21 @@ public:
 	}
 	
 	//deconstructor
-	~BstNode();
+	~BstNode() {}
 
 	//getters/setters
 	BstNode* getR() const { return Rchi; }
 	BstNode* getL() const { return Lchi; }
 	string getDataM() const { return DataM; }
 	char getDatat() const { return DataT; }
+
 	void setR(BstNode* ptr) { Rchi = ptr; }
 	void setL(BstNode* ptr) { Lchi = ptr; }
-	void setDataM(string str) { DataM = str; }
+	void setDataM(string& str) { DataM = str; }
 	void setDataT(char chr) { DataT = chr; }
 
 	
 
 };
 
+#endif BSTNODE_H

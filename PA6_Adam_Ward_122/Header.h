@@ -19,6 +19,7 @@ Description: PA6, a BST for translating morse code for some reason??? still not 
 #include <algorithm>   
 #include <stdexcept>  
 #include <fstream>
+#include <sstream>
 
 using std::cout;
 using std::cin;
