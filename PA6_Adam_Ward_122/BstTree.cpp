@@ -41,10 +41,9 @@ BstNode* BstTree::readTree(string inputName, BstNode* root){
 
 		//alrighty, ive got a semblence of a node. What now? This first one is the root, but how do i put these in afterwards?
 		//do i just alternate? was that the point of balancing the library? what about the Rchi and Lchi? what do i do with those?
-		//a problem for tommorow me, i think my brain hurts enough as it is >.> anywho im gonna start logging the dates and times as well
-		//because why not it will look cooler. 
-		//Lots of progress made today! 7/29/2024 - 10:06 AM
-		//
+		//a problem for tommorow me, i think my brain hurts enough as it is >.>
+		// 
+		// 
 		//Well well well i was overthinking this like a lot. Turns out, much like any other linked list (whitch this is essentially a really weird version of),
 		//I just make a insert function, then read in the file and insert what ive read into said linked list using the insert function. lot less confusing
 		//then i initially thought! yippee ;3
@@ -55,19 +54,61 @@ BstNode* BstTree::readTree(string inputName, BstNode* root){
 }
 
 
-void BstTree::showTree(BstNode* root) {
+void BstTree::print(BstNode* root) {
+	//root = getRoot();
 	if (!root) return;
-	showTree(root->Lchi);
+	print(root->Lchi);
 	cout << "(" << root->DataT << " | " << root->DataM << ")\n";
-	showTree(root->Rchi);
+	print(root->Rchi);
 }
+
+string BstTree::sift(BstNode* root, char target) {
+	if (!root) {
+		return "Sift Failed";
+	}
+
+
+	string str = sift(root->Lchi, target);
+	if (str != "Sift Failed") {
+		return str;
+	}
+
+	if (root->DataT == toupper(target)) {
+		cout << "found!" << root->DataT << ":" << root->DataM;
+		return root->DataM;
+	}
+
+	str = sift(root->Rchi, target);
+	if (str != "Sift Failed") {
+		return str;
+	}
+
+	return "Sift Failed";
+}
+
 
 
 void BstTree::makeBST() {
 	BstNode* root = nullptr;
 	root = readTree("morseLibrary.txt", root);
-	showTree(root);
+	sendRoot(root);
+	//showTree(root); //assignment wants me to do this seperately i guess, so bah humbug spose ill move it
+}
+
+void BstTree::search(BstNode* root) {
+	string input;
+	string translation;
+	char inputC = '.';
+	cout << "Enter sentence/word to be translated: ";
+	cin >> input;
+	//input.erase(1, 1); //not needed turns out you CAN just treat it like an array in C lmao
+	int j = input.length();
+	for (int i = 0; i < j; i++) {
+	//	cout << input[i] << ": ";
+		cout << sift(root, input[i]) << "\n";
+	}
+
+
 }
 
 
-	

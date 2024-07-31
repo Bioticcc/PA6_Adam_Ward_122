@@ -7,24 +7,24 @@
       "RelativeMoniker": "D:0:0:{C02EBFA6-79E3-41AA-8E07-717E9CE52BCA}|PA6_Adam_Ward_122.vcxproj|solutionrelative:BstTree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C02EBFA6-79E3-41AA-8E07-717E9CE52BCA}|PA6_Adam_Ward_122.vcxproj|C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C02EBFA6-79E3-41AA-8E07-717E9CE52BCA}|PA6_Adam_Ward_122.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C02EBFA6-79E3-41AA-8E07-717E9CE52BCA}|PA6_Adam_Ward_122.vcxproj|C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\BstTree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C02EBFA6-79E3-41AA-8E07-717E9CE52BCA}|PA6_Adam_Ward_122.vcxproj|solutionrelative:BstTree.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C02EBFA6-79E3-41AA-8E07-717E9CE52BCA}|PA6_Adam_Ward_122.vcxproj|C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\Header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C02EBFA6-79E3-41AA-8E07-717E9CE52BCA}|PA6_Adam_Ward_122.vcxproj|solutionrelative:Header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C02EBFA6-79E3-41AA-8E07-717E9CE52BCA}|PA6_Adam_Ward_122.vcxproj|C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\BstNode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C02EBFA6-79E3-41AA-8E07-717E9CE52BCA}|PA6_Adam_Ward_122.vcxproj|solutionrelative:BstNode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C02EBFA6-79E3-41AA-8E07-717E9CE52BCA}|PA6_Adam_Ward_122.vcxproj|C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\morseLibrary.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{C02EBFA6-79E3-41AA-8E07-717E9CE52BCA}|PA6_Adam_Ward_122.vcxproj|solutionrelative:morseLibrary.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C02EBFA6-79E3-41AA-8E07-717E9CE52BCA}|PA6_Adam_Ward_122.vcxproj|C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\BstNode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C02EBFA6-79E3-41AA-8E07-717E9CE52BCA}|PA6_Adam_Ward_122.vcxproj|solutionrelative:BstNode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C02EBFA6-79E3-41AA-8E07-717E9CE52BCA}|PA6_Adam_Ward_122.vcxproj|C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C02EBFA6-79E3-41AA-8E07-717E9CE52BCA}|PA6_Adam_Ward_122.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C02EBFA6-79E3-41AA-8E07-717E9CE52BCA}|PA6_Adam_Ward_122.vcxproj|C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\Header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C02EBFA6-79E3-41AA-8E07-717E9CE52BCA}|PA6_Adam_Ward_122.vcxproj|solutionrelative:Header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,13 +38,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-16T18:17:01.388Z",
               "IsPinned": true,
@@ -58,7 +58,7 @@
               "RelativeDocumentMoniker": "BstTree.cpp",
               "ToolTip": "C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\BstTree.cpp",
               "RelativeToolTip": "BstTree.cpp",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAADoAAAATAAAA",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAAAG4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-29T18:54:29.366Z",
               "IsPinned": true,
@@ -66,33 +66,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "BstTree.h",
               "DocumentMoniker": "C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\BstTree.h",
               "RelativeDocumentMoniker": "BstTree.h",
               "ToolTip": "C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\BstTree.h",
               "RelativeToolTip": "BstTree.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABwAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-07-29T18:43:28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "BstNode.h",
               "DocumentMoniker": "C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\BstNode.h",
               "RelativeDocumentMoniker": "BstNode.h",
               "ToolTip": "C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\BstNode.h",
               "RelativeToolTip": "BstNode.h",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAADAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-07-16T18:18:23.465Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Header.h",
               "DocumentMoniker": "C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\Header.h",
               "RelativeDocumentMoniker": "Header.h",
@@ -100,18 +100,17 @@
               "RelativeToolTip": "Header.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-16T18:17:08.409Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-16T18:17:08.409Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "morseLibrary.txt",
               "DocumentMoniker": "C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\morseLibrary.txt",
               "RelativeDocumentMoniker": "morseLibrary.txt",
               "ToolTip": "C:\\Users\\jeezu\\Documents\\GitHub\\PA6_Adam_Ward_122\\PA6_Adam_Ward_122\\morseLibrary.txt",
               "RelativeToolTip": "morseLibrary.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-07-29T18:41:51.692Z",
               "EditorCaption": ""

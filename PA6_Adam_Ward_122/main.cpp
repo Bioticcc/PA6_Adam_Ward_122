@@ -5,5 +5,7 @@
 int main(void){
 	
 	BstTree BST;
-	BST.makeBST();
+	BstNode* root = BST.getRoot();
+	//BST.print(root);
+	BST.search(root);
 }
