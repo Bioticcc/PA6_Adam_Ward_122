@@ -13,8 +13,10 @@ public:
 	//doesnt need a copy constructor as of now, cause all im tryna do is read from the file. i think? lmao i dunno ;-; this PA is WEIRD buddy
 	//To whoever my TA ends up being, have MERCY on me with this one ong i might be cooked
 
-	int readTree(string& inputName);
-	//int readFile(std::fstream& inFile);
+	BstNode* readTree(string inputName, BstNode* root);
+	BstNode* insertToTree(BstNode* root, char text, string morse);
+	void makeBST();
+	void showTree(BstNode* root);
 
 };
 

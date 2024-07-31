@@ -3,5 +3,7 @@
 #include "BstTree.h"
 
 int main(void){
-
+	
+	BstTree BST;
+	BST.makeBST();
 }

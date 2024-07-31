@@ -1,33 +1,73 @@
 #include "BstTree.h"
 #include "BstNode.h"
 
-int BstTree::readTree(string& inputName){
-	//initializing BstNode? i guess? seems i need to do that here 
-	BstNode Node;
+BstNode* BstTree::insertToTree(BstNode* root, char text, string morse) {
+	//essentially this versions head ptr: root
+
+	if (root == nullptr) {
+		//means its the initial root, so 'M'? i think? bababooey cause hell if i know tbh
+		return new BstNode(text, morse);
+		//so new is C++'s version of malloc it seems
+	}
+	if (text < root->DataT) {
+		//recursive shenanigans
+		root->Lchi = insertToTree(root->Lchi, text, morse);
+	}
+	if (text > root->DataT) {
+		root->Rchi = insertToTree(root->Rchi, text, morse);
+	}
+	return root;
+}
+
+
+BstNode* BstTree::readTree(string inputName, BstNode* root){
+//initializing BstNode? i guess? seems i need to do that here //nevermind we do it the way we did all the linked lists previously bassically
 
 	std::ifstream input;
 	input.open(inputName, std::ios::in);
 	//reading in a line from the .txt
 	string line;
-	std::getline(input, line);
-	//now i gotta split the line at the " " and put the first half in BstNode.DataT and etc
-	//using isstringstream can apparantly do this way easier then strtok(), so imma go with that!
-	std::istringstream parse(line);
-	//im TRYING to set this parse stuff equal to parse >> DataT >> DataM, but for some reason it aint registering that those exist here??? idunno
-	char text;
-	string morse;
-	parse >> text >> morse;
-	Node.setDataT(text);
-	Node.setDataM(morse);
-	//alrighty, ive got a semblence of a node. What now? This first one is the root, but how do i put these in afterwards?
-	//do i just alternate? was that the point of balancing the library? what about the Rchi and Lchi? what do i do with those?
-	//a problem for tommorow me, i think my brain hurts enough as it is >.> anywho im gonna start logging the dates and times as well
-	//because why not it will look cooler. 
-	//Lots of progress made today! 7/29/2024 - 10:06 AM
 
 
+	while (!input.eof()) {
+		std::getline(input, line);
+		//now i gotta split the line at the " " and put the first half in BstNode.DataT and etc
+		//using isstringstream can apparantly do this way easier then strtok(), so imma go with that!
 
+		std::istringstream parse(line);
+		char text;
+		string morse;
+		parse >> text >> morse;
 
-
+		//alrighty, ive got a semblence of a node. What now? This first one is the root, but how do i put these in afterwards?
+		//do i just alternate? was that the point of balancing the library? what about the Rchi and Lchi? what do i do with those?
+		//a problem for tommorow me, i think my brain hurts enough as it is >.> anywho im gonna start logging the dates and times as well
+		//because why not it will look cooler. 
+		//Lots of progress made today! 7/29/2024 - 10:06 AM
+		//
+		//Well well well i was overthinking this like a lot. Turns out, much like any other linked list (whitch this is essentially a really weird version of),
+		//I just make a insert function, then read in the file and insert what ive read into said linked list using the insert function. lot less confusing
+		//then i initially thought! yippee ;3
+		root = insertToTree(root, text, morse);
+	}
+	input.close();
+	return root;
 }
 
+
+void BstTree::showTree(BstNode* root) {
+	if (!root) return;
+	showTree(root->Lchi);
+	cout << "(" << root->DataT << " | " << root->DataM << ")\n";
+	showTree(root->Rchi);
+}
+
+
+void BstTree::makeBST() {
+	BstNode* root = nullptr;
+	root = readTree("morseLibrary.txt", root);
+	showTree(root);
+}
+
+
+	

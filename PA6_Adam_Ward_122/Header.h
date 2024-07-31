@@ -12,7 +12,8 @@ Description: PA6, a BST for translating morse code for some reason??? still not 
 #define HEADER_H
 
 #define _CRT_SECURE_NO_WARNINGS
-#include <iostream>   
+#include <iostream>  
+#include <ostream>
 #include <string>      
 #include <vector>    
 #include <map>     
