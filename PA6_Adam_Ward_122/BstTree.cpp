@@ -19,7 +19,6 @@ BstNode* BstTree::insertToTree(BstNode* root, char text, string morse) {
 	return root;
 }
 
-
 BstNode* BstTree::readTree(string inputName, BstNode* root){
 //initializing BstNode? i guess? seems i need to do that here //nevermind we do it the way we did all the linked lists previously bassically
 
@@ -53,7 +52,6 @@ BstNode* BstTree::readTree(string inputName, BstNode* root){
 	return root;
 }
 
-
 void BstTree::print(BstNode* root) {
 	//root = getRoot();
 	if (!root) return;
@@ -63,6 +61,15 @@ void BstTree::print(BstNode* root) {
 }
 
 string BstTree::sift(BstNode* root, char target) {
+
+	//goDAMN this is a work of art this is my favorite function of this PA. BEHOLD, the all mighty Sift! 
+	//It bassically does the same thing as my print funciton, except I changed around things, and added a few more if statements!
+	//It goes back and forth through the entire tree, except now instead of printing when EVERYTHING it finds, it insteads specifically only
+	//returns when it finds the target character. (in upper case because morseLibrary.txt is all upper, or reaches the end of the tree
+	//without finding anything!
+	//dunno why it makes me so hype, but lordy this IS the magnum opus of PA6 imo. Its even got a cool ass name: "Sift" god i love it
+
+
 	if (!root) {
 		return "Sift Failed";
 	}
@@ -74,7 +81,7 @@ string BstTree::sift(BstNode* root, char target) {
 	}
 
 	if (root->DataT == toupper(target)) {
-		cout << "found!" << root->DataT << ":" << root->DataM;
+		//cout << "found!" << root->DataT << ":";
 		return root->DataM;
 	}
 
@@ -86,8 +93,6 @@ string BstTree::sift(BstNode* root, char target) {
 	return "Sift Failed";
 }
 
-
-
 void BstTree::makeBST() {
 	BstNode* root = nullptr;
 	root = readTree("morseLibrary.txt", root);
@@ -95,20 +100,72 @@ void BstTree::makeBST() {
 	//showTree(root); //assignment wants me to do this seperately i guess, so bah humbug spose ill move it
 }
 
+
+string BstTree::readInput(string inputName) {
+	std::ifstream input;
+	input.open(inputName, std::ios::in);
+	string text;
+	string test1;
+	test1.append("\n");
+
+	while (!input.eof()) {
+		std::getline(input, text);
+		test1.append(text);
+		test1.append("\n");
+	}
+	
+	//text.append("test"); //its not actually saving the lines I read from input to text?? am i doin some thing wrong... :/
+	//ahah, so the issue was text is wiped and reset everytime its called, and the last time its called is on an empty line
+	//causing it to essentially return an EMPTY line of text, so yeah no shit it aint gon work lol ;3
+
+	cout << test1;
+	input.close();
+	return test1;
+}
+
+
+
 void BstTree::search(BstNode* root) {
-	string input;
+	string input;	
+	input = readInput("Convert.txt");
+	//string input;
 	string translation;
-	char inputC = '.';
-	cout << "Enter sentence/word to be translated: ";
-	cin >> input;
+
+	//ALright, well APPARANTLY this is meant to be translated from a .txt document I guess, so fml ig 
+	//(kidding its super easy to make it read from .txt, but still hilariously aggravating) T^T
+	
+	//cout << "Enter sentence/word to be translated: ";
+	//cin >> input; //apparantly this only reads up to the first whitespace character! WISH I KNEW THAT SOONER LMAO (>.>)
 	//input.erase(1, 1); //not needed turns out you CAN just treat it like an array in C lmao
+	//getline(std::cin, input);
+
 	int j = input.length();
 	for (int i = 0; i < j; i++) {
-	//	cout << input[i] << ": ";
-		cout << sift(root, input[i]) << "\n";
-	}
+		//	cout << input[i] << ": ";
+			/*
+			string test = sift(root, input[i]);
+			cout << test << "\n";
+			cout << sift(root, input[i]) << "\n";
+			*/
+		char check1 = ' ';
+		char check2 = '\n';
+		if (input[i] != check1 && input[i]!=check2) {
+			translation.append(sift(root, input[i]));
+			translation.append(" ");
 
+		}
+		else if(input[i] == check1){
+			translation.append("   ");
+		}
+		else if (input[i] == check2) {
+			translation.append("\n");
+		}
+	}
+	cout << "Translated string:\n" << translation;
 
 }
+
+
+
 
 

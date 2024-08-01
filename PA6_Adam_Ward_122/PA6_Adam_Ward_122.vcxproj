@@ -128,18 +128,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BstNode.cpp" />
-    <ClCompile Include="BstTranslator.cpp" />
     <ClCompile Include="BstTree.cpp" />
     <ClCompile Include="func.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BstNode.h" />
-    <ClInclude Include="BstTranslator.h" />
     <ClInclude Include="BstTree.h" />
     <ClInclude Include="Header.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Convert.txt" />
     <Text Include="morseLibrary.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

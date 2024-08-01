@@ -26,6 +26,7 @@ public:
 	void makeBST();
 	void print(BstNode* root);
 	void search(BstNode* root);
+	string readInput(string inputName);
 	string sift(BstNode* root, char target);
 	void sendRoot(BstNode* rootPtr) {
 		root = rootPtr;
@@ -33,6 +34,8 @@ public:
 	BstNode* getRoot() {
 		return root;
 	}
+
+
 
 };
 
