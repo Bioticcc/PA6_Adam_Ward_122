@@ -149,6 +149,7 @@ void BstTree::search(BstNode* root) {
 			*/
 		char check1 = ' ';
 		char check2 = '\n';
+
 		if (input[i] != check1 && input[i]!=check2) {
 			translation.append(sift(root, input[i]));
 			translation.append(" ");
@@ -161,7 +162,7 @@ void BstTree::search(BstNode* root) {
 			translation.append("\n");
 		}
 	}
-	cout << "Translated string:\n" << translation;
+	cout << "Translations:\n" << translation;
 
 }
 
