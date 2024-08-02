@@ -27,6 +27,9 @@
     <ClCompile Include="BstTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BstTreeEC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">
@@ -36,6 +39,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BstTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BstTreeEC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BstNodeEC.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

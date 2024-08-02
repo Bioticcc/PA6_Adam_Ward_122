@@ -129,12 +129,15 @@
   <ItemGroup>
     <ClCompile Include="BstNode.cpp" />
     <ClCompile Include="BstTree.cpp" />
+    <ClCompile Include="BstTreeEC.cpp" />
     <ClCompile Include="func.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BstNode.h" />
+    <ClInclude Include="BstNodeEC.h" />
     <ClInclude Include="BstTree.h" />
+    <ClInclude Include="BstTreeEC.h" />
     <ClInclude Include="Header.h" />
   </ItemGroup>
   <ItemGroup>

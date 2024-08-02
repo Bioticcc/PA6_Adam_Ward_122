@@ -123,8 +123,6 @@ string BstTree::readInput(string inputName) {
 	return test1;
 }
 
-
-
 void BstTree::search(BstNode* root) {
 	string input;	
 	input = readInput("Convert.txt");
@@ -153,7 +151,6 @@ void BstTree::search(BstNode* root) {
 		if (input[i] != check1 && input[i]!=check2) {
 			translation.append(sift(root, input[i]));
 			translation.append(" ");
-
 		}
 		else if(input[i] == check1){
 			translation.append("   ");
@@ -166,7 +163,14 @@ void BstTree::search(BstNode* root) {
 
 }
 
+int BstTree::deleteTree(BstNode* root) {
+	if (root != nullptr) {
+		deleteTree(root->Lchi);
+		deleteTree(root->Rchi);
+		delete root;
 
-
+	}
+	return 1;
+}
 
 

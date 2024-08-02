@@ -46,9 +46,7 @@ public:
 	void setL(BstNode* ptr) { Lchi = ptr; }
 	void setDataM(string& str) { DataM = str; }
 	void setDataT(char chr) { DataT = chr; }
-
-	
-
 };
+
 
 #endif BSTNODE_H

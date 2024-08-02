@@ -34,10 +34,11 @@ public:
 	BstNode* getRoot() {
 		return root;
 	}
+	int deleteTree(BstNode* root);
 
 
+	~BstTree() { deleteTree(root); }
 
 };
-
 
 #endif BSTTREE_H

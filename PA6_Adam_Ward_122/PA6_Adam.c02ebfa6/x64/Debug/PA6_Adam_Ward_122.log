@@ -1,3 +1,5 @@
-﻿  BstTree.cpp
-C:\Users\jeezu\Documents\GitHub\PA6_Adam_Ward_122\PA6_Adam_Ward_122\BstTree.cpp(142,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+﻿  BstTreeEC.cpp
+  main.cpp
+C:\Users\jeezu\Documents\GitHub\PA6_Adam_Ward_122\PA6_Adam_Ward_122\main.cpp(20,18): warning C4930: 'BstTreeEC<void> BstTree(void)': prototyped function not called (was a variable definition intended?)
+  Generating Code...
   PA6_Adam_Ward_122.vcxproj -> C:\Users\jeezu\Documents\GitHub\PA6_Adam_Ward_122\PA6_Adam_Ward_122\x64\Debug\PA6_Adam_Ward_122.exe
